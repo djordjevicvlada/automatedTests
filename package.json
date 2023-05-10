@@ -1,0 +1,28 @@
+{
+  "name": "buymaterials.automation",
+  "version": "1.0.0",
+  "description": "Playwright/TS test automation framework on BuyMaterials project",
+  "main": "index.js",
+  "scripts": {
+    "executeAllTests": "playwright test --config=playwright.config.ts  --project=Integration --project=EndToEndTests",
+    "executeApiTests": "playwright test --config=playwright.config.ts --project=Integration",
+    "executeE2eTests": "playwright test --config=playwright.config.ts --project=ExecuteInChrome ",
+    "executeTestsChrome": "playwright test --config=playwright.config.ts --project=ExecuteInChrome --headed",
+    "executeTestsChromeHeadless": "playwright test --config=playwright.config.ts --project=ExecuteInChrome",
+    "executeTestsFirefox": "playwright test --config=playwright.config.ts --project=ExecuteInFirefox --headed",
+    "executeTestsSafariMobile": "playwright test --config=playwright.config.ts --project=Mobile_Safari --headed",
+    "executeTestsFirefoxHeadless": "playwright test --config=playwright.config.ts --project=ExecuteInFirefox",
+    "executeTestsWebkit": "playwright test --config=playwright.config.ts --project=ExecuteInWebkit --headed",
+    "executeE2EinCrossBrowsers": "playwright test --config=playwright.config.ts  --project=ExecuteInChrome --project=ExecuteInFirefox --project=ExecuteInWebkit"
+  },
+  "author": "Bojan Grujicic",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@playwright/test": "^1.33.0",
+    "@types/authenticator": "^1.1.1",
+    "detect-browser": "^5.3.0",
+    "dotenv": "^16.0.3",
+    "playwright-fluent": "^1.61.0",
+    "prettyjson": "^1.2.5"
+  }
+}
